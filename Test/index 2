@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://materializecss.com/css/prism.css" rel="stylesheet">
+    <link href="https://materializecss.com/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <title>form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="grey-text">Form1</h1>
+
+        <!-- Text Field -->
+        <form>
+            <!-- Text Field -->
+            <div class="input-field">
+                <input type="text" id="name" placeholder="Full Name">
+                <label for="name">Name</label>
+            </div>
+            <!-- Value & Disabled -->
+            <div class="input-field">
+                <input type="email" disabled placeholder="email" id="name" value="alyssaratke@gmail.com">
+                <label for="email">Email</label>
+            </div>
+            <!-- Text Area -->
+            <div class="input-field">
+                <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                <label for="message">Message</label>
+            </div>
+            <!-- INline Field -->
+            Number of User:
+            <div class="input-field inline">
+                <input type="text" id="users">
+                <label for="users">Users</label>
+            </div>
+            <!-- Icons Prefix -->
+            <div class="input-field">
+                <i class="material-icons prefix">phone</i>
+                <input type="tel" id="phone">
+                <label for="phone">Phone Number</label>
+            </div>
+            <!-- Validation & Error -->
+            <div class="input-field">
+                <input type="email" placeholder="Email" id="email" class="validate">
+
+            </div>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

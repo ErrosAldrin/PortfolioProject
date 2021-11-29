@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+<!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/c69ab135cc.js" crossorigin="anonymous"></script>  
+    <title>Floating Button</title>
+</head>
+<body class="indigo darken-4">
+<div class="container">
+ <h1 class="white-text"> Floating button</h1>
+  <!--Floating buttons -->
+
+  <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons black">add</i></a>
+
+  <br></br>
+
+  <button class="btn waves-effect waves-light black" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large white ">
+      <i class="large material-icons black-text">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons black">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons green">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons purple">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons blue">attach_file</i></a></li>
+    </ul>
+  </div>
+
+  <br><br>
+
+
+  <a class="btn-large disabled">Push</a>
+<a class="btn disabled">Push</a>
+<a class="btn-flat disabled">Pull</a>
+<a class="btn-floating disabled"><i class="material-icons">add</i></a>
+
+  <script> 
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left'
+    });
+  });</script>
+
+
+
+</div>
+<!--Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+      $('.fixed-action-btn').floatingActionButton();
+    });
+ </script>
+</body>
+</html

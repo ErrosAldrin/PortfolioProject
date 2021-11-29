@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://materializecss.com/css/prism.css" rel="stylesheet">
+    <link href="https://materializecss.com/css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+
+
+    <title>Form</title>
+    
+</head>
+
+
+<body class="indigo darken-4">
+    <div class="container white-text">
+        <h1 class="black-text">Form</h1>
+
+        <!-- Text Field -->
+        <form>
+            
+            <div class="input-field">
+                <input type="text" id="name" placeholder="Full Name">
+                <label for="name"> Name </label>
+            </div>
+            
+            <div class="input-field">
+                <input type="email" disabled placeholder="email" id="name" value="eldegard69@gmail.com">
+                <label for="email"> Email </label>
+            </div>
+            
+            <div class="input-field">
+                <i class="material-icons prefix">message</i>
+                <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                <label for="message"> Message </label>
+            </div>
+            
+            Number of User:
+            <div class="input-field inline">
+                <input type="text" id="users">
+                <label for="users"> Users </label>
+            </div>
+            
+            <div class="input-field">
+                <i class="material-icons prefix"> phone </i>
+                <input type="tel" id="phone">
+                <label for="phone"> Phone Number </label>
+            </div>
+            
+            <div class="input-field">
+                <input type="email" placeholder="Email" id="email" class="validate">
+
+            </div>
+        </form>
+
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span class="white-text">Red</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" checked="checked" />
+                <span class="white-text">Yellow</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span class="white-text">Filled in</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input id="indeterminate-checkbox" type="checkbox" />
+                <span class="white-text">Indeterminate Style</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" checked="checked" disabled="disabled" />
+                <span class="white-text">Disabled Checked Box</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" disabled="disabled" />
+                <span class="white-text">Disabled Checkbox</span>
+              </label>
+            </p>
+          </form>
+
+          <div class="chip">
+            <img src="Necrosis.jpg" alt="Example Of Disease">
+            Necrosis
+          </div>
+
+          <div class="chip">
+            Close
+            <i class="close material-icons">close</i>
+          </div>
+
+          <br>
+
+                    <!-- Default with no input (automatically generated)  -->
+            <div class="chips">Chips</div>
+            <div class="chips chips-initial">Chips Initial</div>
+            <div class="chips chips-placeholder">Chips Placeholder</div>
+            <div class="chips chips-autocomplete"> Chips Auto</div>
+
+          
+    </div>
+
+    <!-- Jquery Stuff -->
+    <script>  
+    $('.chips').chips();
+        $('.chips-initial').chips({
+          data: [{
+            tag: 'Up',
+          }, {
+            tag: 'Down',
+          }, {
+            tag: 'Left',
+          }],
+        });
+        $('.chips-placeholder').chips({
+          placeholder: 'Enter a tag',
+          secondaryPlaceholder: '+Tag',
+        });
+        $('.chips-autocomplete').chips({
+          autocompleteOptions: {
+            data: {
+              'Up': null,
+              'Down': null,
+              'Left': null
+            },
+            limit: Infinity,
+            minLength: 1
+          }
+        });
+        </script>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
